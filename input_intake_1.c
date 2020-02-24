@@ -6,7 +6,7 @@
 /*   By: qli <qli@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/30 16:17:13 by qli            #+#    #+#                */
-/*   Updated: 2020/02/20 18:25:23 by qli           ########   odam.nl         */
+/*   Updated: 2020/02/24 11:16:42 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,8 +72,6 @@ int			ft_printf(const char *fmt, ...)
 	va_start(ap, fmt);
 	ft_struct_reset(&input);
 	input.return_val = 0;
-	if (ft_process_input((char *)fmt, &input, ap) == -1)
-		return (-1);
 	va_end(ap);
 	return (input.return_val);
 }

@@ -6,7 +6,7 @@
 /*   By: qli <qli@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/30 16:20:11 by qli            #+#    #+#                */
-/*   Updated: 2020/02/20 15:48:30 by qli           ########   odam.nl         */
+/*   Updated: 2020/02/24 11:16:49 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,9 @@ int		ft_putchar(char c, t_input *input)
 
 	output = write(1, &c, 1);
 	if (output == -1 || input->return_val == -1)
-	{
 		input->return_val = -1;
-	}
-	input->return_val++;
+	else
+		input->return_val++;
 	return (0);
 }
 

@@ -6,7 +6,7 @@
 /*   By: qli <qli@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/02/19 16:09:25 by qli            #+#    #+#                */
-/*   Updated: 2020/02/20 18:27:30 by qli           ########   odam.nl         */
+/*   Updated: 2020/02/24 11:16:42 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,8 +100,6 @@ int			ft_str_convert(t_input *input, t_print *print, char *s)
 {
 	int	len;
 
-	if (ft_strncmp(s, "(null)", 6) == 0)
-		s = "(null)";
 	ft_input_check(input);
 	len = ft_strlen(s);
 	ft_input_check(input);
