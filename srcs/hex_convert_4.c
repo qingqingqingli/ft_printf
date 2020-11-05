@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   u_convert_4.c                                      :+:    :+:            */
+/*   hex_convert_4.c                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: qli <qli@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/02/18 09:22:08 by qli            #+#    #+#                */
-/*   Updated: 2020/02/19 15:37:18 by qli           ########   odam.nl         */
+/*   Created: 2020/02/19 11:05:10 by qli           #+#    #+#                 */
+/*   Updated: 2020/11/05 16:54:50 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 /*
 **	negative width -> minus flag + positive width
@@ -20,11 +20,11 @@
 **	len > width && precision -> no conversion needed
 */
 
-static int	ft_input_check(t_input *input, unsigned int u)
+static int	ft_input_check(t_input *input, int u)
 {
 	int	len;
 
-	len = ft_digit_u(u);
+	len = ft_digit_hex(u);
 	if (input->width < 0)
 	{
 		input->width = input->width * -1;
@@ -81,7 +81,7 @@ static void	ft_no_flag(t_input *input, t_print *print, unsigned int *u, int len)
 		if (count > 0)
 			ft_set_pad(input, print, count, 0);
 	}
-	ft_putnbr_unsigned(*u, input);
+	ft_putnbr_hex(*u, input);
 }
 
 /*
@@ -101,7 +101,7 @@ static void	ft_minus(t_input *input, t_print *print, unsigned int *u, int len)
 		count = input->precision - len;
 		if (count > 0)
 			ft_set_pad(input, print, count, 0);
-		ft_putnbr_unsigned(*u, input);
+		ft_putnbr_hex(*u, input);
 		ft_set_count_u(input, &count, len);
 		if (count > 0)
 			ft_set_pad(input, print, count, 1);
@@ -110,7 +110,7 @@ static void	ft_minus(t_input *input, t_print *print, unsigned int *u, int len)
 	{
 		count = input->precision - len;
 		ft_set_pad(input, print, count, 0);
-		ft_putnbr_unsigned(*u, input);
+		ft_putnbr_hex(*u, input);
 	}
 }
 
@@ -140,7 +140,7 @@ static void	ft_zero(t_input *input, t_print *print, unsigned int *u, int len)
 	count = input->precision - len;
 	if (count > 0)
 		ft_set_pad(input, print, count, 0);
-	ft_putnbr_unsigned(*u, input);
+	ft_putnbr_hex(*u, input);
 }
 
 /*
@@ -148,13 +148,13 @@ static void	ft_zero(t_input *input, t_print *print, unsigned int *u, int len)
 **	conversion needed: no flag, minus flag, zero flag
 */
 
-int			ft_u_convert(t_input *input, t_print *print, unsigned int u)
+int			ft_hex_convert(t_input *input, t_print *print, unsigned int u)
 {
 	int	len;
 
-	len = ft_digit_u(u);
+	len = ft_digit_hex(u);
 	if (ft_input_check(input, u) == 1)
-		ft_putnbr_unsigned(u, input);
+		ft_putnbr_hex(u, input);
 	else if (ft_input_check(input, u) == 2)
 		ft_set_pad(input, print, input->width, 1);
 	else if (ft_input_check(input, u) == 0)

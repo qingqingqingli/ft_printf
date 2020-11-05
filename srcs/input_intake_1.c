@@ -5,12 +5,12 @@
 /*                                                     +:+                    */
 /*   By: qli <qli@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/01/30 16:17:13 by qli            #+#    #+#                */
-/*   Updated: 2020/02/24 11:16:42 by qli           ########   odam.nl         */
+/*   Created: 2020/01/30 16:17:13 by qli           #+#    #+#                 */
+/*   Updated: 2020/11/05 16:54:50 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 void		ft_struct_reset(t_input *input)
 {

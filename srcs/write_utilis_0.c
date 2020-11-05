@@ -5,12 +5,12 @@
 /*                                                     +:+                    */
 /*   By: qli <qli@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/01/30 16:20:11 by qli            #+#    #+#                */
-/*   Updated: 2020/02/24 11:16:49 by qli           ########   odam.nl         */
+/*   Created: 2020/01/30 16:20:11 by qli           #+#    #+#                 */
+/*   Updated: 2020/11/05 16:54:50 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 int		ft_putchar(char c, t_input *input)
 {

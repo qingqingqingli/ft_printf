@@ -5,12 +5,12 @@
 /*                                                     +:+                    */
 /*   By: qli <qli@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/02/19 16:09:25 by qli            #+#    #+#                */
-/*   Updated: 2020/02/24 11:16:42 by qli           ########   odam.nl         */
+/*   Created: 2020/02/19 16:09:25 by qli           #+#    #+#                 */
+/*   Updated: 2020/11/05 16:54:50 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 static int	ft_input_check(t_input *input)
 {
