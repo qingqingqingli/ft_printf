@@ -7,8 +7,8 @@ In this project, you can learn how to use variadic arguments. More importantly, 
 
 ## Technical considerations
 
-- Allowed functions: ***malloc***, ***free***, ***write***, ```va_start```, *va_arg*, *va_copy*, *va_copy*
+- Allowed functions: ```malloc```, ```free```, ```write```, ```va_start```, ```va_arg```, ```va_copy```, ```va_copy```
 - All heap allocated memory space must be properly freed when necessary
-- It will manage the following conversions: *cspdiuxX%*
-- It will manage any combination of *-0.** flags and minimum field width with all conversions
+- It will manage the following conversions: ```cspdiuxX%```
+- It will manage any combination of ```-0.*``` flags and minimum field width with all conversions
 
