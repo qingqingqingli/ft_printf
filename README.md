@@ -33,9 +33,10 @@ $ ./a.out
 
 ![ft_printf_2](https://github.com/qingqingqingli/readme_images/blob/master/ft_printf_2.png)
 
-![ft_printf_3](https://github.com/qingqingqingli/readme_images/blob/master/ft_printf_3.png)
 ![ft_printf_4](https://github.com/qingqingqingli/readme_images/blob/master/ft_printf_4.png)
 
 ![ft_printf_5](https://github.com/qingqingqingli/readme_images/blob/master/ft_printf_5.png)
 
 ![ft_printf_6](https://github.com/qingqingqingli/readme_images/blob/master/ft_printf_6.png)
+
+![ft_printf_3](https://github.com/qingqingqingli/readme_images/blob/master/ft_printf_3.png)
