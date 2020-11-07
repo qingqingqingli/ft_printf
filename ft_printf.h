@@ -5,8 +5,8 @@
 /*                                                     +:+                    */
 /*   By: qli <qli@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/01/30 16:16:13 by qli            #+#    #+#                */
-/*   Updated: 2020/02/21 09:23:33 by qli           ########   odam.nl         */
+/*   Created: 2020/01/30 16:16:13 by qli           #+#    #+#                 */
+/*   Updated: 2020/11/07 11:16:00 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <limits.h>
+# include <stdio.h>
+# define GREEN "\033[0;32m"
+# define BLACK "\033[0m"
 
 typedef	struct	s_input
 {

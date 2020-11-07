@@ -6,7 +6,7 @@
 #    By: qli <qli@student.codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/01/30 16:15:43 by qli           #+#    #+#                  #
-#    Updated: 2020/11/07 10:43:20 by qli           ########   odam.nl          #
+#    Updated: 2020/11/07 11:48:13 by qli           ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,6 @@ SRC		= 	srcs/input_intake_1.c\
 
 SRC_O	= 	$(SRC:%.c=%.o)
 LIB		= 	ar rc
-FLAGS	= 	-Wall -Wextra -Werror
 COMPILE	= 	gcc
 
 GREEN	= 	\033[38;5;46m
@@ -42,7 +41,7 @@ all: $(NAME)
 
 %.o: %.c
 	@echo "$(GREY)Compiling...				$(WHITE)$<"
-	@$(COMPILE) $(FLAGS) -c -o $@ $<
+	@$(COMPILE) -c -o $@ $<
 
 $(NAME): $(SRC_O)
 	@echo "$(ORANGE)Creating libftprint.a$(WHITE)"

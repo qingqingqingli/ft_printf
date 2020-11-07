@@ -6,7 +6,7 @@
 /*   By: qli <qli@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/30 16:20:11 by qli           #+#    #+#                 */
-/*   Updated: 2020/11/07 10:40:52 by qli           ########   odam.nl         */
+/*   Updated: 2020/11/07 11:46:04 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	ft_putnbr_hex(unsigned int u, t_input *input)
 {
 	if (u >= 16)
 		ft_putnbr_hex(u / 16, input);
-	if ((u % 16) > 0 && (u % 16) <= 9)
+	if ((u % 16) >= 0 && (u % 16) <= 9)
 		ft_putchar('0' + (u % 16), input);
 	else if ((u % 16) >= 10 && (u % 16) < 16)
 	{
