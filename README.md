@@ -13,8 +13,7 @@ In this project, you can learn how to use variadic arguments. More importantly, 
 - It will manage any combination of ```-0.*``` flags and minimum field width with all conversions
 
 ## How to test
-> Run the following commands
-> You can replace the ```test.c``` with your own test file
+> Run the following commands. You can replace the ```test.c``` with your own test file
 
 ```shell
 $ git clone https://github.com/qingqingqingli/ft_printf
